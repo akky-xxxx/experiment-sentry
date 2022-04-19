@@ -4,6 +4,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const handleClick = () => {
+    throw new Error('エラーテスト');
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -50,6 +53,10 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <div>
+            <button onClick={handleClick} type="button">エラーテスト</button>
+          </div>
         </div>
       </main>
 
