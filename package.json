@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` next start",
     "lint": "next lint"
   },
   "dependencies": {
