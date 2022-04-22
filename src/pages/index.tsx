@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   const handleClick = () => {
-    throw new Error('エラーテスト');
+    throw new Error(`エラーテスト。ENV: ${process.env.NODE_ENV}`);
   }
   return (
     <div className={styles.container}>
