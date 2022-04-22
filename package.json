@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` next dev",
+    "prebuild": "rm -rf .next",
     "build": "next build",
     "start": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` next start",
     "lint": "next lint"
